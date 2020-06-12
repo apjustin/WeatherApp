@@ -1,0 +1,41 @@
+package com.test.weather.data.model
+
+import com.google.gson.annotations.Expose
+import com.google.gson.annotations.SerializedName
+
+class WeatherResponse {
+    @SerializedName("coord")
+    @Expose
+    var coord: Coord? = null
+    @SerializedName("weather")
+    @Expose
+    lateinit var weather: List<Weather>
+    @SerializedName("base")
+    @Expose
+    var base: String? = null
+    @SerializedName("main")
+    @Expose
+    lateinit var main: Main
+    @SerializedName("wind")
+    @Expose
+    var wind: Wind? = null
+    @SerializedName("clouds")
+    @Expose
+    var clouds: Clouds? = null
+    @SerializedName("dt")
+    @Expose
+    var dt: Int? = null
+    @SerializedName("sys")
+    @Expose
+    var sys: Sys? = null
+    @SerializedName("id")
+    @Expose
+    var id: Int? = null
+    @SerializedName("name")
+    @Expose
+    var name: String? = null
+    @SerializedName("cod")
+    @Expose
+    var cod: Int? = null
+
+}
